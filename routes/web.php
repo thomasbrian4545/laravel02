@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Menampilkan Data
+Route::get('/mahasiswa', function () {
+    $nama = "Thomas Brian";
+    $nilai = 75;
+    $buah = ["Apel", "Melon", "Mangga", "Nanas"];
+    $nomor = [55, 30, 77, 95];
+    return view('mahasiswa', compact('nama', 'nilai', 'buah', 'nomor'));
+});
