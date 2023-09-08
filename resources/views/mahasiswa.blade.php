@@ -104,7 +104,7 @@
             @endif
         </div>
         <br>
-        {{-- Perulangan FOR ELSE --}}
+        {{-- Perulangan FORELSE --}}
         @forelse ($buah as $val)
             @if ($val == 'Mangga')
                 <div class="alert alert-danger d-inline-block">
