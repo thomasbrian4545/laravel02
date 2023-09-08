@@ -71,6 +71,17 @@
                 </div>
             @endfor
         </div>
+        <br>
+        {{-- Perulangan WHILE --}}
+        <div class="container text-center mt-3 pt-3 bg-white">
+            <?php $i = 0; ?>
+            @while ($i < 5)
+                <div class="alert alert-info d-inline-block">
+                    {{ $i }}
+                </div>
+                <?php $i++; ?>
+            @endwhile
+        </div>
     </div>
 </body>
 
