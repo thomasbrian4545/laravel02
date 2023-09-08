@@ -36,6 +36,32 @@
                 Nilai tidak valid.
             </div>
         @endif
+        <br>
+        {{-- Kondisi SWITCH --}}
+        @switch($nilai)
+            @case(0)
+                <div class="alert alert-danger d-inline-block">
+                    Tidak ikut ujian.
+                </div>
+            @break
+
+            @case(75)
+                <div class="alert alert-warning d-inline-block">
+                    Lumayan.
+                </div>
+            @break
+
+            @case(100)
+                <div class="alert alert-warning d-inline-block">
+                    Bagus.
+                </div>
+            @break
+
+            @default
+                <div class="alert alert-warning d-inline-block">
+                    Nilai tidak valid.
+                </div>
+        @endswitch
     </div>
 </body>
 
