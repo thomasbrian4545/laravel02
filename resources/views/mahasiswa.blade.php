@@ -103,6 +103,23 @@
                 </div>
             @endif
         </div>
+        <br>
+        {{-- Perulangan FOR ELSE --}}
+        @forelse ($buah as $val)
+            @if ($val == 'Mangga')
+                <div class="alert alert-danger d-inline-block">
+                    {{ $val }}
+                </div>
+            @else
+                <div class="alert alert-success d-inline-block">
+                    {{ $val }}
+                </div>
+            @endif
+        @empty
+            <div class="alert alert-danger d-inline-block">
+                Tidak ada data.
+            </div>
+        @endforelse
     </div>
 </body>
 
