@@ -82,6 +82,27 @@
                 <?php $i++; ?>
             @endwhile
         </div>
+        <br>
+        {{-- Perulangan Array FOREACH dan Kondisi IF ELSE --}}
+        <div class="container text-center mt-3 pt-3 bg-white">
+            @if (count($buah) > 0)
+                @foreach ($buah as $val)
+                    @if ($val == 'Mangga')
+                        <div class="alert alert-danger d-inline-block">
+                            {{ $val }}
+                        </div>
+                    @else
+                        <div class="alert alert-success d-inline-block">
+                            {{ $val }}
+                        </div>
+                    @endif
+                @endforeach
+            @else
+                <div class="alert alert-danger d-inline-block">
+                    Tidak ada data.
+                </div>
+            @endif
+        </div>
     </div>
 </body>
 
