@@ -25,3 +25,18 @@ Route::get('/mahasiswa', function () {
     $nomor = [55, 30, 77, 95];
     return view('mahasiswa', compact('nama', 'nilai', 'buah', 'nomor'));
 });
+
+// Merancang Layout
+Route::get('/pegawai', function () {
+    $arrPegawai = ["Thomas Brian", "Andik Kurniawan", "Melani Ayu", "Widya Waspada"];
+    return view('pegawai')->with('pegawai', $arrPegawai);
+})->name('pegawai');
+
+Route::get('/direksi', function () {
+    $arrDireksi = ["Untung Heri Sukariyanto", "Sugeng", "Abdullah Badrudin", "Topan"];
+    return view('direksi')->with('direksi', $arrDireksi);
+})->name('direksi');
+
+Route::get('/universitas/fmipa/fisika/gallery', function () {
+    return view('gallery');
+})->name('gallery');
