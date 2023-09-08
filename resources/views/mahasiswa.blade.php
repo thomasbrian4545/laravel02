@@ -130,7 +130,22 @@
                 {{ $no }}
             </div>
         @endforeach
-    </div>
+        <br>
+        {{-- BREAK --}}
+        @foreach ($nomor as $no)
+            @if ($no < 50)
+            @break
+        @endif
+        <div class="alert alert-success d-inline-block">
+            {{ $no }}
+        </div>
+        <br>
+        {{-- PHP Mode --}}
+        @php
+            var_dump($nomor);
+        @endphp
+    @endforeach
+</div>
 </body>
 
 </html>
