@@ -120,6 +120,16 @@
                 Tidak ada data.
             </div>
         @endforelse
+        <br>
+        {{-- CONTINUE --}}
+        @foreach ($nomor as $no)
+            @if ($no < 50)
+                @continue
+            @endif
+            <div class="alert alert-success d-inline-block">
+                {{ $no }}
+            </div>
+        @endforeach
     </div>
 </body>
 
