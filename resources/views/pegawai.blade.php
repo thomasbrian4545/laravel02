@@ -14,13 +14,13 @@
         <div class="container">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="/pegawai">Data Pegawai</a>
+                    <a class="nav-link active" href="{{ route('pegawai') }}">Data Pegawai</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/direksi">Data Direksi</a>
+                    <a class="nav-link" href="{{ route('direksi') }}">Data Direksi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/gallery">Gallery</a>
+                    <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
                 </li>
             </ul>
         </div>
