@@ -44,3 +44,9 @@ Route::get('/universitas/fmipa/fisika/gallery', function () {
 Route::get('/admin', function () {
     return view('admin');
 });
+
+Route::get('/informasi/{fakultas}/{jurusan}', function ($fakultas, $jurusan) {
+    $data = [$fakultas, $jurusan];
+    return view('informasi')->with('data', $data);
+})->name('info');
+
