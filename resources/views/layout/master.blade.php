@@ -26,7 +26,10 @@
         </div>
     </nav>
 
-    @yield('content')
+    {{-- @yield('content') --}}
+    @section('content')
+    <div class="alert alert-primary text-center">Sistem Informasi</div>
+    @show
 
     <footer class="bg-dark py-4 text-white mt-4">
         <div class="container">
