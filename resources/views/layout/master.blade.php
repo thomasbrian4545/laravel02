@@ -22,9 +22,6 @@
                 <li class="nav-item">
                     <a class="nav-link @yield('menuGallery')" href="{{ route('gallery') }}">Gallery</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link @yield('menuInformasi')" href="{{ route('info', ['fakultas' => 'FMIPA', 'jurusan' => 'Fisika']) }}">Info</a>
-                </li>
             </ul>
         </div>
     </nav>

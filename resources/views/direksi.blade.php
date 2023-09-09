@@ -1,4 +1,9 @@
-@include('layout.header', ['title' => 'Data Direksi'])
+{{-- @include('layout.header', ['title' => 'Data Direksi']) --}}
+@extends('layout.master')
+@section('title', 'Data Direksi')
+@section('menuDireksi', 'active')
+
+@section('content')
 <div class="container text-center mt-3 p-4 bg-white">
     <h1 class="mb-3">Data Direksi</h1>
     <div class="row">
@@ -13,4 +18,5 @@
         </div>
     </div>
 </div>
-@include('layout.footer')
+@endsection
+{{-- @include('layout.footer') --}}
