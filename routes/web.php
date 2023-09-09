@@ -40,3 +40,7 @@ Route::get('/direksi', function () {
 Route::get('/universitas/fmipa/fisika/gallery', function () {
     return view('gallery');
 })->name('gallery');
+
+Route::get('/admin', function () {
+    return view('admin');
+});
